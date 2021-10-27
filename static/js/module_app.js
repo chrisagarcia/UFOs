@@ -32,7 +32,7 @@ function handleClick() {
         // filteredData var will have a filter applied
         // the filter uses .filter() with an anonymous function that takes each row as arg
         //      and asks if the datetime property is = to the date var
-        filteredData = filteredData.filter(row => row.datetime === date);
+        filteredData = filteredData.filter(row => row[datetime] === date);
     }
 
     buildTable(filteredData);
